@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img_4"
+    android:layout_height="match_parent"
+    tools:context=".Detail">
+    <ImageButton
+        android:id="@+id/quayve"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="TextView"
+        android:textColor="#F31313"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/CongThuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:text="S + am/ is/ are + N/ Adj"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/Cau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CongThuc"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="Nhập Câu"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/layout1"
+        android:layout_below="@+id/Cau"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/LamMoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Refresh"
+
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/Luu"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="  Lưu  "
+
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:gravity="center"
+        android:text="Danh sách kho lưu trữ"
+        android:textColor="@color/purple_500"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_below="@+id/tg"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/purple_700"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:backgroundTint="#EEE8AA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tg"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white" />
+</RelativeLayout>
